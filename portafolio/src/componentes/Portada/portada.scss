@@ -1,0 +1,30 @@
+.portada {
+  height: 100vh;
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* background-color: rgb(122, 233, 88); */
+  font-size: 250%;
+
+  .--video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+// ------------------------------------------- typewriter
+
+.typewriter {
+  position: absolute;
+  color: rgb(52, 247, 133);
+  .verde {
+    color: #000000;
+  }
+}
