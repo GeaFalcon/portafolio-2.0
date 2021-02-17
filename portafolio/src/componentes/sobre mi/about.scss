@@ -1,0 +1,173 @@
+.aboutMe {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .borde {
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+    .foto {
+      height: 380px;
+      width: 380px;
+      position: absolute;
+      background-image: url(../media/foto.jpg);
+      background-position-x: 58%;
+      background-position-y: 85%;
+      background-size: 161%;
+    }
+  }
+  .caja {
+    height: 450px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 40px;
+    .sobreMi {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid black;
+      .circulo {
+        border-radius: 100%;
+        height: 20px;
+        width: 20px;
+        margin-left: 6px;
+        border: 2px solid black;
+      }
+      .circulo:first-child {
+        background-color: #8787ff;
+      }
+      h2 {
+        margin: 0 auto;
+        font-weight: 500;
+      }
+    }
+    .informacion {
+      padding: 0 20px 20px 20px;
+      height: 100%;
+      font-size: 100%;
+      font-weight: 600;
+    }
+  }
+  .hobbies {
+    border: 2px solid black;
+    width: 150px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    position: relative;
+
+    .volador {
+      height: 30px;
+      width: 140px;
+      font-size: 20px;
+      font-weight: 700;
+      border: 2px solid black;
+      background-color: white;
+      position: absolute;
+      text-align: center;
+      top: 60px;
+      left: -130px;
+      transition: 1s;
+
+      svg {
+        margin: 0px 0 0 10px;
+        color: black;
+        font-size: 16px;
+      }
+    }
+    ::before {
+      content: "Hobbies";
+      transition: 1s;
+    }
+    svg {
+      margin: 8px;
+      color: #8787ff;
+    }
+  }
+  .hobbies:hover .volador {
+    animation-name: cosas;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .hobbies:hover .volador::before {
+    animation-name: cambios;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes cosas {
+  0% {
+    top: 60px;
+  }
+  14% {
+    top: 40px;
+  }
+  28% {
+    top: 97px;
+  }
+  42% {
+    top: 152px;
+  }
+  56% {
+    top: 210px;
+  }
+  70% {
+    top: 267px;
+  }
+  84% {
+    top: 320px;
+  }
+  98% {
+    top: 378px;
+  }
+  100% {
+    top: 60px;
+  }
+}
+
+@keyframes cambios {
+  0% {
+    content: "Hobbies";
+  }
+  14% {
+    content: "Programar";
+    font-size: 20px;
+  }
+  28% {
+    content: "Cocinar";
+    font-size: 20px;
+  }
+  42% {
+    content: "Videojuegos";
+    font-size: 14px;
+  }
+  56% {
+    content: "Animales";
+    font-size: 20px;
+  }
+  70% {
+    content: "Manga/Comic";
+    font-size: 14px;
+  }
+  84% {
+    content: "Video-Quedadas";
+    font-size: 14px;
+  }
+  90% {
+    content: "Druida lvl 60";
+    font-size: 14px;
+  }
+  100% {
+    content: "wiiiiiii ";
+  }
+}

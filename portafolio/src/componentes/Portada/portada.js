@@ -4,14 +4,15 @@ import "../Portada/portada.scss";
 import Typewriter from "typewriter-effect";
 
 const Portada = () => {
-  var verde = "verde";
-  verde.style.setProperty("color", "#00000");
+  let front = '<span id ="verde">Front-end</span>';
+  let back = '<span id ="verde">Back-end</span>';
+  let web = '<span id ="verde">Web</span>';
 
   return (
     <div className="portada">
       <video className="--video" src={video} autoPlay loop muted />
 
-      <div>
+      <div className="titulo">
         <h1>¡Hola! Soy Jose</h1>
         <div className="typewriter">
           <Typewriter
@@ -21,13 +22,13 @@ const Portada = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString(`Desarrollador ${verde}`)
+                .typeString(`Desarrollador ${front}`)
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString("Desarrollador Back-end")
+                .typeString(`Desarrollador ${back}`)
                 .pauseFor(2000)
                 .deleteAll()
-                .typeString("Maquetador web")
+                .typeString(`Maquetador ${web}`)
                 .pauseFor(2000)
                 .deleteAll()
                 .start();
