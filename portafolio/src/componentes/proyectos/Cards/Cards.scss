@@ -1,0 +1,96 @@
+.card {
+  height: 300px;
+  width: 250px;
+  background-color: white;
+  border: solid 2px black;
+
+  .cabecera {
+    border-bottom: solid 2px black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px black;
+
+    .icono {
+      height: 32px;
+      width: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 5px;
+      border: solid 2px black;
+      transition: 0.3s;
+    }
+    .button {
+      width: 130px;
+      height: 32px;
+      margin: 0px 10px;
+      border: solid 2px black;
+      position: relative;
+
+      transition: 0.3s;
+
+      span {
+        font-weight: 700;
+        font-size: 20px;
+        position: absolute;
+        top: 2px;
+        left: 7px;
+      }
+      svg {
+        position: absolute;
+        right: 10px;
+        top: 7px;
+      }
+    }
+    :hover {
+      background-color: #8787ff;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  }
+  .contenido-imagen {
+    padding: 10px;
+    h4 {
+      font-size: 18px;
+      margin: 0 0 10px 0px;
+    }
+    .cabecera-imagen {
+      background-color: #8787ff;
+      height: 16px;
+      border: solid 2px black;
+      display: flex;
+      .circulo {
+        height: 5px;
+        width: 5px;
+        margin: 3px;
+        background-color: rgb(247, 244, 244);
+        border-radius: 50%;
+        border: solid 2px black;
+      }
+      :first-child {
+        background-color: rgb(52, 247, 133);
+      }
+    }
+    .imagen {
+      height: 160px;
+      background-color: red;
+      border: solid 2px black;
+      border-top: 0px;
+    }
+    p {
+      text-justify: right;
+      line-height: -10px;
+      font-size: 14px;
+    }
+    svg {
+      margin: 5px;
+      float: right;
+      position: relative;
+      bottom: -60px;
+    }
+  }
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.scss";
 import "../media/foto.jpg";
-import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCookieBite,

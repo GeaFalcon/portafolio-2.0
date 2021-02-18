@@ -1,0 +1,34 @@
+.proyectos {
+  height: 100vh;
+  background-color: #8787ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    border: 2px solid black;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  .contenedor {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .card {
+      margin: 8px;
+    }
+  }
+  .git {
+    font-size: 20px;
+    margin: 20px;
+    span {
+      position: relative;
+      top: -3px;
+      left: 6px;
+      font-weight: 600;
+      color: white;
+    }
+  }
+}
