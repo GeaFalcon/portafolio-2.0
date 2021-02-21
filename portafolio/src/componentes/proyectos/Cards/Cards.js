@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGamepad, faGlobe, faSync } from "@fortawesome/free-solid-svg-icons";
 import "./Cards.scss";
 import github from "../../media/gitHub.svg";
-const Cads = ({ img, title }) => {
+const Cards = ({ img, title }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
@@ -22,7 +22,7 @@ const Cads = ({ img, title }) => {
             <img src={github} />
           </div>
           <div className="button" onClick={handleClick}>
-            <span>Info</span>
+            <span>+ Info</span>
             <FontAwesomeIcon icon={faSync} />
           </div>
         </div>
@@ -64,4 +64,4 @@ const Cads = ({ img, title }) => {
   );
 };
 
-export default Cads;
+export default Cards;
