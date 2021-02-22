@@ -1,11 +1,12 @@
 import React from "react";
 import "./Curriculum.scss";
+import icono from "../media/man.svg";
 
 const Curriculum = () => {
   return (
     <div>
       <div className="cv">
-        <span>icono</span>
+        <span>{icono}</span>
         <p>TRABAJEMOS JUNTOS</p>
         <hr />
         <p>
@@ -15,6 +16,7 @@ const Curriculum = () => {
         </p>
         <button></button>
       </div>
+      <div>{icono}</div>
       <div className="vacio"></div>
     </div>
   );
