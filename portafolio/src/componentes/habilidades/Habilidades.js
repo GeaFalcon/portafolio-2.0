@@ -1,8 +1,24 @@
 import React from "react";
-// import Card-habilidades from "./card-habilidades/Card-habilidades.js"
+import AbilitiesCards from "./Cards/AbilitiesCards";
+import Learning from "./Cards/Learning.js";
+
+import "./habilidades.scss";
 
 const Habilidades = () => {
-  //   return <Card-habilidades />;
+  return (
+    <div className="Abilities">
+      <h2>Habilidades</h2>
+      <div className="cardsAbilities">
+        <AbilitiesCards />
+        <AbilitiesCards />
+        <AbilitiesCards />
+      </div>
+      <div className="container-learning">
+        <Learning />
+        <Learning />
+      </div>
+    </div>
+  );
 };
 
 export default Habilidades;

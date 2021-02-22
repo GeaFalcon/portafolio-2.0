@@ -5,6 +5,7 @@ import Portada from "./componentes/Portada/portada";
 import About from "./componentes/sobre mi/about";
 import Proyectos from "./componentes/proyectos/Proyectos";
 import Habilidades from "./componentes/habilidades/Habilidades";
+import Curriculum from "./componentes/Curriculum/Curriculum";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Proyectos />
       <Habilidades />
+      <Curriculum />
     </Fragment>
   );
 }

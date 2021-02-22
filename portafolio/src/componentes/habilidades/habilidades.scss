@@ -1,0 +1,20 @@
+.Abilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  h2 {
+    background-color: #8787ff;
+    padding: 10px 30px;
+    color: white;
+    border: solid 2px black;
+  }
+  .cardsAbilities {
+    display: flex;
+  }
+  .container-learning {
+    display: flex;
+  }
+}

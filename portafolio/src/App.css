@@ -2,3 +2,7 @@
   font-family: "Monserrat";
   src: url("./componentes/media/Fuente/Montserrat-Medium.ttf");
 }
+
+* {
+  font-family: "Monserrat";
+}
