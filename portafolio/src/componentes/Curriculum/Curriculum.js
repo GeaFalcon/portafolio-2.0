@@ -23,8 +23,12 @@ const Curriculum = () => {
         <div className="contacto">
           <span>Diseño: Irene Rueda | Javier Santos</span>
           <div className="icon-contacto">
-            <img className="icon" src={linkedin} />
-            <img className="reverse icon" src={github} />
+            <a href="https://www.linkedin.com/in/jose-antonio-gea-falcon-46b1b8159/">
+              <img className="icon" src={linkedin} />
+            </a>
+            <a href="https://github.com/GeaFalcon">
+              <img className="reverse icon" src={github} />
+            </a>
           </div>
         </div>
       </div>

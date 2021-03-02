@@ -8,11 +8,14 @@ import Habilidades from "./componentes/habilidades/Habilidades";
 import Curriculum from "./componentes/Curriculum/Curriculum";
 
 function App() {
+  var cosa = document.documentElement.scrollTop;
   return (
     <Fragment>
       <Nav />
       <Portada />
       <About />
+      <h1>{cosa}</h1>
+
       <Proyectos />
       <Habilidades />
       <Curriculum />
